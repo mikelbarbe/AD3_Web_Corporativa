@@ -1,0 +1,45 @@
+*{
+    font-family: 'Playfair Display';
+}
+
+h1{
+    text-align: center;
+}
+body{
+    background-image: url(./img/fondo.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+form{
+    text-align: left;
+    margin: auto;
+    width: 600px;
+    height: 680px;
+    border: 10px outset rgb(40, 116, 239);
+    border-radius: 10px;
+    font-size: 16px;
+}
+label{
+    margin-bottom: 10px;   
+    display: block; 
+}
+#boton{
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: lightblue;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 65px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+}
+legend{
+    font-weight: bold;
+}
+
+
