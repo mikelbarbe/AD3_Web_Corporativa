@@ -1,11 +1,67 @@
 *{
     font-family: 'Playfair Display';
 }
+/*CSS de index.html*/
+header{
+    margin: auto;
+    width: 2000px;
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
 
+}
+ul{
+    list-style: none;
+}
+#sin-estilo{
+    background-color: transparent;
+    margin-right: 20px;
+    border: none;
+    
+}
+.nav{
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+}
+.nav li a{
+    background-color: lightblue;
+    text-decoration: none;
+    padding:5px 10px;
+    display: block;
+    color: black;
+    margin: 0px;
+    padding: 5px;
+}
+.nav li a:hover{
+    background-color: azure;
+}
+.nav > li{
+    display: inline-block;
+    border: 1px solid black;
+    margin: -3px;
+
+}
+
+
+/*CSS de conocenos.html*/
 h1{
     text-align: center;
 }
-body{
+h2{
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+#text{
+    width: 1500px;
+    margin: auto;
+}
+
+/*CSS de formulario.html*/
+#bodyf{
     background-image: url(./img/fondo.PNG);
     background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +72,7 @@ form{
     text-align: left;
     margin: auto;
     width: 600px;
-    height: 680px;
+    height: 750px;
     border: 10px outset rgb(40, 116, 239);
     border-radius: 10px;
     font-size: 16px;
@@ -34,12 +90,10 @@ label{
     text-align: center;
     margin-left: 65px;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 200px;
     height: 50px;
 }
 legend{
     font-weight: bold;
 }
-
-
