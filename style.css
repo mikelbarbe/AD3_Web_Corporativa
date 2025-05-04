@@ -42,11 +42,30 @@ ul{
     margin: -3px;
 
 }
+.bodyi{
+    
+    text-align: center;
+}
+footer{
+    text-align: center;
+    background-color: brown;
+}
+.image{
+
+  
+
+    
+    
+}
+#navi{
+    font-size: 4rem;
+}
 
 
 /*CSS de conocenos.html*/
 h1{
     text-align: center;
+    font-size: 5rem;
 }
 h2{
     text-align: center;
