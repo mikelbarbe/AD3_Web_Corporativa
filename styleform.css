@@ -48,20 +48,29 @@ ul{
 }
 
 /*CSS de conocenos.html*/
+
+#bodyc{
+
+    background-image: url(./img/foto-fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    float: left;
+}
 h2{
-    text-align: center;
+    text-align:center;
     font-size: 3rem;
 }
-h2{
-    text-align: center;
-}
+
 
 div{
     text-align: center;
 }
 #text{
-    width: 1500px;
+    width: 60vh;
     margin: auto;
+    
 }
 
 /*CSS de formulario.html*/
@@ -71,6 +80,7 @@ div{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    
 }
 form{
     text-align: left;
