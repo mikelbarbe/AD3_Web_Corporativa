@@ -10,58 +10,70 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
+    font-family: 'Playfair Display';
     box-sizing: border-box;
 }
 
-
-
-.nav {
-    background-color: var(--primary);
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
     text-align: center;
     font-size: 3rem;
     align-items:left;
-   
+}
+header h1{
+    padding: 25px;
+    padding-left: 115px;
+    display: flex;
+    white-space: nowrap; /*Evita que el texto se ponga en varias lineas*/
 }
 
-#headl{
-    vertical-align: text-top;
+header .logo{
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
-
-
-.nav ul {
+header h1{
+    display: flex;
+    top: 155px;
+    left:200px;
+    color: black;
+    font-size: 3rem;
+}
+header .lista{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 1000px;
+}
+header .lista li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition:0.3s;
+    font-size: 0.4em;
+    text-transform: uppercase;
     display: flex;
 }
-
-.nav ul li {
-    border-right: solid .1rem var(--black-text);
+header .lista a:hover{
+    padding: 2px;
+    border-bottom:5px solid #4281b9;
 }
 
-.nav ul li:last-child {
-    border-right: none;
+header .lista li {
+    list-style: none;
+    margin-left: 30px;    
 }
-
-nav ul li a {
-    color: var(--white-text);
-    font-size: 1.5rem;
-    padding: 0.8rem 1rem;
-    text-transform: uppercase;
+.index{
+    text-decoration: none;
 }
-
-nav ul li:hover {
-    background-color: var(--button-hover);
-    transition: all 0.3s;
+body{
+    background-image: url(./img/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 .drawer {
     color: var(--white-text);
     float: left;
@@ -92,6 +104,7 @@ main {
 .cuerpo {
     flex: 1; /* La imagen ocupará una parte del espacio disponible */
     margin-right: 20px; /* Espacio entre la imagen y los textboxes */
+    margin-top: 100px;
 }
 
 .imagen {
@@ -109,7 +122,7 @@ main {
     gap: 20px; /* Espacio entre los bloques de texto */
 }
 
-.bloque-texto {
+.diferencia {
     width: 100%;
     padding: 15px;
     border: 7px solid #040404;
@@ -117,8 +130,12 @@ main {
     border-style: groove;
     text-align: center;
     font-size: 2rem;
-}
+    border-radius: 10px;
 
+}
+#diferencia1{
+    margin-top: 100px;
+}
 .bloque-texto h1 {
     margin-top: 0; /* Elimina el margen superior predeterminado del h1 */
     margin-bottom: 10px;
