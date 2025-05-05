@@ -8,8 +8,8 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+   
+    
     font-family: 'Playfair Display';
     box-sizing: border-box;
 }
@@ -43,19 +43,22 @@ header h1{
     font-size: 3rem;
 }
 header .lista{
+    flex: 1;
     display: flex;
     position: absolute;
     top: 30px;
-    left: 1000px;
+    left: 1050px;
+    white-space: nowrap;
 }
 header .lista li a{
     color: black;
     text-decoration: none;
     padding: 10px;
     transition:0.3s;
-    font-size: 0.4em;
+    font-size: 0.3em;
     text-transform: uppercase;
     display: flex;
+    font-weight: 800;
 }
 header .lista a:hover{
     padding: 2px;
@@ -71,8 +74,10 @@ header .lista li {
 }
 body{
     background-image: url(./img/wallpaper.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 .drawer {
     color: var(--white-text);
@@ -89,6 +94,29 @@ body{
     display: none;
 }
 
+/*CSS de conocenos.html*/
+
+#bodyc{
+
+    background-image: url(./img/foto-fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2{
+    text-align:center;
+    font-size: 2rem;  
+}
+
+div{
+    text-align: center;
+}
+#text{
+    width: 60vh;
+    margin: auto;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
 
 /*Estilos a la parte principal de la web*/
 
@@ -144,7 +172,48 @@ main {
 }
 
 
-
+/*CSS de formulario.html*/
+#bodyf{
+    background-image: url(./img/foto-fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+form{
+    text-align: left;
+    margin: auto;
+    width: 600px;
+    height: 750px;
+    border: 5px outset rgb(232, 245, 168);
+    border-radius: 10px;
+    font-size: 16px;
+}
+label{
+    margin-bottom: 10px;   
+    display: block; 
+}
+.boton{
+    font-size: 10rem;
+    border: 1px solid rgb(232, 245, 168);
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: lightblue;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+}
+.boton:hover{
+    background: white;
+}
+legend{
+    font-weight: bold;
+}
 
 
 
@@ -168,7 +237,12 @@ footer {
     justify-content: center;
     align-items: center;
     height: 10vh;
+}
 
+
+/*CSS de localizacion*/
+div iframe{
+    border-radius: 20px;
 }
 
 
