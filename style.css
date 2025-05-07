@@ -37,7 +37,7 @@ header .logo{
     top: 1.5rem;
 }  
 nav .lista{
-    flex: 1; /* La imagen ocupará una parte del espacio disponible */
+    list-style: none;
     display: flex;
     position: absolute;
     left: 60rem;
@@ -65,11 +65,10 @@ nav .lista li {
     margin-left: 30px;    
 }
 nav{
-    
     height:10vh;
-    width: 100%;
+    position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .index{
     text-decoration: none;
@@ -89,17 +88,8 @@ nav{
     
 }
 .drawer {
-    color: var(--white-text);
-    position: absolute;
-    right: 10rem;
     display: none;
-    float: right;
     cursor: pointer;
-    padding: 0.2rem;
-    border-radius: .1rem;
-}
-#ckbox {
-    display: none;
 }
 .cuerpo {
     margin-right: 1rem; /* Espacio entre la imagen y los textboxes */
@@ -145,7 +135,9 @@ main {
 main img {
     height: 70vh;
 }
-
+#ckbox{
+    display: none;
+}
 
 /*CSS de conocenos.html*/
 
@@ -178,22 +170,11 @@ div{
     margin-right: 20vh;
     margin-top: 10vh;
 }
-
 #text{
     width: 60vh;
     margin: auto;
     margin-left: 20vh;
     margin-right: 20vh;
-
-}
-
-
-/*Estilos a la parte principal de la web*/
-.bloque-texto h1 {
-    margin-top: 0; /* Elimina el margen superior predeterminado del h1 */
-    margin-bottom: 10px;
-    color: #6c0e15;
-    
 }
 
 /*CSS de formulario.html*/
@@ -203,7 +184,6 @@ div{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    
 }
 form{
     text-align: left;
@@ -238,12 +218,6 @@ label{
 legend{
     font-weight: bold;
 }
-
-#image{
-    background-image: url(./img/biblia.avif);
-    background-size: cover;
-}
-
 footer {
     background-color: var(--primary);
     color: #040404;
@@ -263,42 +237,36 @@ div iframe{
 
 
 /***************************************************************************/
-
-@media(max-width:1120px) {
-    nav {
-        justify-content: flex-start;
-    }
+@media(max-width: 1020px) {
     .drawer {
         display: block;
+        font-size: 2rem;
+        color: black;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1000;
     }
-    nav h1 {
-        margin-left: 1rem;
-    }
-    ul .lista {
-        position: fixed;
-        width: 50%;
-        height: 100vh;
+
+    .lista {
+        flex-direction: column;
+        position: absolute;
+        top: 0rem;
+        left: 0;
+        right: 10rem;
         background-color: var(--background);
-        top: 10vh;
-        right: -100%;
-        text-align: right;
-        transition: all 0.5s;
+        padding: 1rem;
+        z-index: 500;
+    }
+    #ckbox:checked ~ .lista {
         display: flex;
-        flex-direction: column;
-        align-content: stretch;
     }
-    nav ul li {
-        padding: 1rem 0;
-        display: flex;
-        flex-direction: column;
-        padding-left: 2rem;
-        border-bottom: solid .1rem rgba(201, 196, 196, 0.4);
+    nav .lista li {
+        margin-left: 0;
+        margin-bottom: 1rem;
     }
-    #ckbox:checked~ul .lista {
-        right: 0;
-    }
-   
-    footer {
-        text-align: center;
+
+    header h1 {
+        display: none;
     }
 }
