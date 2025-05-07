@@ -20,6 +20,7 @@ header{
     text-align: center;
     font-size: 3rem;
     align-items:left;
+    height: 10vh;
     
 }
 header h1{
@@ -67,10 +68,14 @@ nav .lista li {
 nav{
     
     height:10vh;
-    width: 100%;
+    width: 80vh;
     display: flex;
     justify-content: space-around;
 }
+body{
+    height: 80vh;
+}
+
 .index{
     text-decoration: none;
     
@@ -91,7 +96,8 @@ nav{
 .drawer {
     color: var(--white-text);
     position: absolute;
-    right: 10rem;
+    right: 5rem;
+    top: 2rem;
     display: none;
     float: right;
     cursor: pointer;
