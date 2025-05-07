@@ -14,13 +14,43 @@
 
 </head>
 <body id="bodyf">
-    <h1>FORMULARIO DE CONTACTO</h1>
+    <header>
+        <div>
+            <a href="index.html" class="logo">
+                <img src="./img/logo.png" alt="Logo Torre">
+            </a>
+            <a href="index.html" alt="index" class="index">
+                <h1>Iglesia Evangélica Torre Fuerte </h1>
+            </a>
+        </div>
+        <nav>
+            <ul class="lista">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="localizacion.html">Localización</a>
+                </li>
+                <li>
+                    <a href="conocenos.html">Conócenos</a>
+                </li>
+                <li>
+                    <a href="actividades.html">Actividades</a>
+                </li>
+                <li>
+                    <a href="formulario.html">Contácto</a>
+                </li>
+            </ul> 
+        </nav> 
+    </header>
+    
+    <h2 class="h2">FORMULARIO DE CONTACTO</h2>
 
-    <form action="#"> <!--Aqui puedes poner para que te lo manden al correo de la iglesia-->
+    <form action="ietorres@yahoo.com">
         <fieldset>
             <legend>DATOS PERSONALES</legend>
             
-            <label for="nombre">Nombre:
+            <label for="nombre">*Nombre:
                 <input type="text" name="nombre" id="nombre" required>
             </label>
 
@@ -90,7 +120,7 @@
                 <input type="text" name="tlf" id="tlf">
             </label>
 
-            <label for="email">Email:
+            <label for="email">*Email:
                 <input type="text" name="email" id="email" required>
             </label>
         </fieldset>
@@ -139,8 +169,8 @@
         </fieldset>
         
         <div>
-            <input id="boton" type="submit" value="Enviar">
-            <input id="boton" type="reset" value="Restablecer">
+            <input class="boton" type="submit" value="Enviar">
+            <input class="boton" type="reset" value="Restablecer">
         </div>
     </form>
 </body>
