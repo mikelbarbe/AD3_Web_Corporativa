@@ -19,8 +19,10 @@ header{
     display: flex;
     text-align: center;
     font-size: 3rem;
-    align-items:left;
+    align-items:center;
     height: 10vh;
+    width: 100%;
+    
     
 }
 header h1{
@@ -37,6 +39,7 @@ header .logo{
     left: 1rem;
     top: 1.5rem;
 }  
+
 nav .lista{
     flex: 1; /* La imagen ocupará una parte del espacio disponible */
     display: flex;
@@ -280,7 +283,7 @@ div iframe{
     nav h1 {
         margin-left: 1rem;
     }
-    ul .lista {
+    .lista {
         position: fixed;
         width: 50%;
         height: 100vh;
@@ -297,10 +300,10 @@ div iframe{
         padding: 1rem 0;
         display: flex;
         flex-direction: column;
-        padding-left: 2rem;
+        padding-right: 2rem;
         border-bottom: solid .1rem rgba(201, 196, 196, 0.4);
     }
-    #ckbox:checked~ul .lista {
+    #ckbox:checked~.lista {
         right: 0;
     }
    
