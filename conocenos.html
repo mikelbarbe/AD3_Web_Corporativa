@@ -10,16 +10,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-  
+    <!--Libreria iconos web https://ionic.io/icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--Libreria de iconos de font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body id="bodyc">
     <header>
-        <div>
-            <a href="index.html" class="logo">
-                <img src="./img/logo.png" alt="Logo Torre">
-            </a>
-        </div>
         <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <div class="torre">
+                <a href="index.html" alt="index" class="index">
+                    <h1>Iglesia Evangélica Torre Fuerte </h1>
+                </a>
+            </div>
+        
             <ul class="lista">
                 <li>
                     <a href="index.html">Inicio</a>
@@ -41,31 +51,49 @@
     </header>
 
     <div id="text1">
-        <h2>¿Quiénes somos?</h2>
-        <p>Somos una pequeña iglesia evangélica que servimos a Dios cerca de la localidad 
+        <h2 class="titleC">¿Quiénes somos?</h2>
+        <p  class="cuerpo">Somos una pequeña iglesia evangélica que servimos a Dios cerca de la localidad 
             madrileña de Torres de la Alameda. Nuestro deseo es conocer a Dios lo máximo
         posible y mostrar Su amor a los vecinos de la localidad y alrededores. </p>
     </div>
     <div id="text">
-        <h2>El enfoque de Torre Fuerte</h2>
-        <p id="pc"><h3>Nuestro enfoque está en la enseñanza y el servicio.</h3> </p> Creemos que no hay nada más importante 
+        <h2 class="titleC">El enfoque de Torre Fuerte</h2>
+        <h3>Nuestro enfoque está en la enseñanza y el servicio.</h3> 
+            <p class="cuerpo"> Creemos que no hay nada más importante 
             para el hombre que conocer verdaderamente a Dios y por tanto tratamos de que las personas que vengan a nuestra iglesia
-            reciban todos los domingos enseñanza bíblica de calidad. <p>
-                Además creemos que ese conocimiento no puede quedarse en lo meramente teórico así que animamos constantemente a los miembros de la iglesia
-                a servir al Señor. No queremos ser cristianos domingueros sino siervos verdaderos de Dios. 
+            reciban todos los domingos enseñanza bíblica de calidad.
+            </p>
+            <p class="cuerpo">
+            Además creemos que ese conocimiento no puede quedarse en lo meramente teórico así que animamos constantemente a los miembros de la iglesia
+            a servir al Señor. No queremos ser cristianos domingueros sino siervos verdaderos de Dios. 
             </p>
         </p>
     </div>
     <div id="text">
-        <h2>Nuestra Historia</h2>
-        <p>En Octubre de 2013 abrimos por primera vez nuestras puertas. Éramos tan solo 4 matrimonios con ganas de comenzar algo nuevo. 
+        <h2 class="titleC">Nuestra Historia</h2>
+        <p class="cuerpo">En Octubre de 2013 abrimos por primera vez nuestras puertas. Éramos tan solo 4 matrimonios con ganas de comenzar algo nuevo. 
         En aquellos tiempos no teníamos grandes músicos pero sí el deseo de aprender y mejorar. También éramos muy pocos maestros. Todo esto fue cambiando 
     y en pocos años teníamos un buen grupo de buenos músicos y maestros. </p>
     </div>
-    <div id="text">
-        <h2>Miembros</h2>
-        <p>Actualmente somos aproximadamente entre 60 y 70 asistentes cada domingo. Entre estos asistentes hay cuatro pastores,
+    <div>
+        <h2 class="text2">Miembros</h2>
+        <p class="miembros">Actualmente somos aproximadamente entre 60 y 70 asistentes cada domingo. Entre estos asistentes hay cuatro pastores,
              líderes espirituales de la iglesia que son los responsables de organizar actividades y enseñar la palabra. </p>
     </div>
+
+    <ul class="redesSociales">
+        <li>
+            <a href="mailto:ietorres@yahoo.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/torrefuerte.centroevangelico" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/@torrefuerte2927" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+        </li>
+        <li>
+            <a href="#"><ion-icon name="logo-whatsapp" target="_blank"></ion-icon></a>
+        </li>
+    </ul>
 </body>
 </html>

@@ -10,40 +10,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!--Libreria de iconos de font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body class="fondo">
-
     <header>
-        <div>
-            <a href="index.html" class="logo">
-                <img src="./img/logo.png" alt="Logo Torre">
-            </a>
-            <a href="index.html" alt="index" class="index">
-                <h1>Iglesia Evangélica Torre Fuerte </h1>
-            </a>
-        </div>
         <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <div class="torre">
+                <a href="index.html" alt="index" class="index">
+                    <h1>Iglesia Evangélica Torre Fuerte </h1>
+                </a>
+            </div>
+        
             <ul class="lista">
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="index.html" target="_blank">Inicio</a>
                 </li>
                 <li>
-                    <a href="localizacion.html">Localización</a>
+                    <a href="localizacion.html" target="_blank">Localización</a>
                 </li>
                 <li>
-                    <a href="conocenos.html">Conócenos</a>
+                    <a href="conocenos.html" target="_blank">Conócenos</a>
                 </li>
                 <li>
-                    <a href="actividades.html">Actividades</a>
+                    <a href="actividades.html" target="_blank">Actividades</a>
                 </li>
                 <li>
-                    <a href="formulario.html">Contácto</a>
+                    <a href="formulario.html" target="_blank">Contácto</a>
                 </li>
             </ul> 
-        </nav> 
+        </nav>
     </header>
     <!--Mapa interactivo de google maps con la localizacion de la iglesia-->
-    <h2 class="h2">¿Donde estamos?</h2>
+    <h2 class="titleL">¿Donde estamos?</h2>
     <div><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.0159719012754!2d-3.3648675234524608!3d40.4084969561395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42463c250b12fd%3A0x5db5e3af983cdc0c!2sC.%20Alameda%2C%2011%2C%2028813%20Torres%20de%20la%20Alameda%2C%20Madrid!5e0!3m2!1ses!2ses!4v1746262439830!5m2!1ses!2ses"
          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     <div class="copyright">
