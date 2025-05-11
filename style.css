@@ -114,7 +114,7 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
-    height: 50vw;
+    height: 58.5vw;
     margin-top: 3vh;
     margin-right: 0.3vw;
     
@@ -248,7 +248,7 @@ h3{
     padding: 10px;
 }
 .redesSociales li a{
-    color:white;
+    color:black;
     padding: 0.5vh;
     transition:0.2s;
     display: flex;
@@ -392,13 +392,8 @@ div iframe{
         display: none;
     }
     .text2{
-        
-       
-        
         margin-left: 3vw;
-        font-size: 3.5vh;
-        
-       
+        font-size: 3.5vh;  
     }
     
 }
