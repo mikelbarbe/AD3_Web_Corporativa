@@ -86,6 +86,7 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .title{
     font-size: 3.5vh;
@@ -96,6 +97,7 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .drawer {
     display: none;
@@ -112,7 +114,7 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
-    height: 120vh;
+    height: 50vw;
     margin-top: 3vh;
     margin-right: 0.3vw;
     
@@ -182,6 +184,7 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     overflow-x: hidden; /*Con esto solucionas el desbordamiento general, pero oculta cualquier contenido 
     fuera de la pantalla horizontalmente.De este modo puedes mover los objetos mas alla de su capacidad utilizando "right:-10vw"*/
 }
@@ -386,6 +389,15 @@ div iframe{
     }
     #ckbox:checked~.lista {
         display: none;
+    }
+    .text2{
+        
+       
+        
+        margin-left: 3vw;
+        font-size: 3.5vh;
+        
+       
     }
     
 }
