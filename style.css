@@ -13,54 +13,49 @@
 }
 
 header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
+    position: relative;
     text-align: center;
-    font-size: 3rem;
-    align-items:center;
-    height: 10vh;
-    width: 100%;
-    
-    
+    align-items:left;
 }
 header h1{
-    padding-left: 8rem;
-    padding-top: 0.8rem;
+    margin-top: 5vh;
+    margin-left: 11vh;
     display: flex;
     white-space: nowrap; /*Evita que el texto se ponga en varias lineas*/
     color: black;
-    font-size: 2.5rem;  
+    font-size: 4vh;  
 }
-
 header .logo{
-    position: absolute;
     left: 1rem;
-    top: 1.5rem;
-}  
-
+    top: 5rem;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3vh;
+  margin-left: 2vh;
+  height: auto;
+}
 nav .lista{
-    flex: 1; /* La imagen ocupará una parte del espacio disponible */
+    list-style: none;
     display: flex;
-    position: absolute;
-    left: 60rem;
-    top:0.3rem;
-    white-space: nowrap;
-    
+    white-space: nowrap; 
+    margin-right: 2vh;
+    margin-top: 5vh;  
 }
 nav .lista li a{
     color: black;
+    padding: 0.3vw;
     text-decoration: none;
-    padding: 10px;
     transition:0.3s;
-    font-size: 1.3rem;
+    font-size: 2.2vh;
     text-transform: uppercase;
     display: flex;
     font-weight: 600;
 }
 nav .lista a:hover{
-    padding: 2px;
+    padding: 1px;
     border-bottom:5px solid #4281b9;
 }
 
@@ -69,19 +64,22 @@ nav .lista li {
     margin-left: 30px;    
 }
 nav{
-    
     height:10vh;
-    width: 80vh;
+    position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-body{
-    height: 80vh;
-}
-
 .index{
     text-decoration: none;
-    
+}
+.torre{
+    background-image: url(./img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10vh;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
 }
 .cruz{
     background-image: url(./img/cruz.jpg);
@@ -89,44 +87,51 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.title{
+    font-size: 3.5vh;
+    text-align: center;
+}
 .fondo{
     background-image: url(./img/wallpaper.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 .drawer {
-    color: var(--white-text);
-    position: absolute;
-    right: 5rem;
-    top: 2rem;
     display: none;
-    float: right;
     cursor: pointer;
-    padding: 0.2rem;
-    border-radius: .1rem;
 }
-#ckbox {
-    display: none;
+.drawer i{
+    font-size: 7vh;
+    position: absolute;
+    right: 0.1vw;
+    top:1vh;
 }
-.cuerpo {
-    margin-right: 1rem; /* Espacio entre la imagen y los textboxes */
-    margin-top: 9rem;
-    width: 80vh;
+.biblia {
+    background-image: url(./img/biblia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 120vh;
+    margin-top: 3vh;
+    margin-right: 0.3vw;
+    
+    border: 0.5vh solid #040404;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-bottom: 1.2rem;
 }
 .texto{
     flex: 1; /* La imagen ocupará una parte del espacio disponible */
     display: flex;
-    padding-top: 2.7rem;
     flex-direction: column;
-    gap: 0.5rem; /* Espacio entre los bloques de texto */
+    gap: 0.1vh; /* Espacio entre los bloques de texto */
 }
 main {
     display: flex; /* Usamos flexbox para organizar los elementos lado a lado */
     align-items: flex-start; /* Alinea los elementos en la parte superior */
     min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
-    margin: 0; /* Elimina el margen predeterminado del body */
+    margin-top: 1vh;
     padding: 0px; /* Añade un poco de espacio alrededor del contenido */
     box-sizing: border-box; /* Incluye el padding y el border en el ancho y alto */
 }
@@ -140,174 +145,247 @@ main {
 }
 .diferencia {
     width: 100%;
+    height: 38.3vh;
     padding: 10px;
-    border: 5px solid #040404;
+    border: 0.5vh solid #040404;
     box-sizing: border-box;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5vh;
     border-radius: 15px;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1vh;
+    margin-left: 0vw;
 }
 #diferencia1{
-    margin-top: 100px;
+    margin-top: 3vh;
 }
-main img {
-    height: 70vh;
+#ckbox{
+    display: none;
 }
-
-
-/*CSS de conocenos.html*/
-
-#bodyc{
-
-    background-image: url(./img/foto-fondo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-h2{
-    text-align:center;
-    font-size: 2rem;  
-    
-}
-.h2{ /*Creo esta clase para separar el texto de arriba, al insertar los menus se pegaba*/
-    text-align:center;
-    font-size: 2rem;  
-    margin-top: 15vh;
-}
-
-div{
-    text-align: center;
-}
-
-#text1{  /*Creo este id para separar los div del header, que se montaban*/
-    width: 60vh;
-    margin: auto;
-    margin-left: 20vh;
-    margin-right: 20vh;
-    margin-top: 10vh;
-}
-
-#text{
-    width: 60vh;
-    margin: auto;
-    margin-left: 20vh;
-    margin-right: 20vh;
-
-}
-
-
-/*Estilos a la parte principal de la web*/
-.bloque-texto h1 {
-    margin-top: 0; /* Elimina el margen superior predeterminado del h1 */
-    margin-bottom: 10px;
-    color: #6c0e15;
-    
-}
-
-/*CSS de formulario.html*/
-#bodyf{
-    background-image: url(./img/foto-fondo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    
-}
-form{
-    text-align: left;
-    margin: auto;
-    width: 600px;
-    height: 750px;
-    border: 5px outset rgb(232, 245, 168);
-    border-radius: 10px;
-    font-size: 16px;
-}
-label{
-    margin-bottom: 10px;   
-    display: block; 
-}
-.boton{
-    font-size: 10rem;
-    border: 1px solid rgb(232, 245, 168);
-    border-radius: 5px;
-    font-size: 18px;
-    background-color: lightblue;
-    cursor: pointer;
-    text-align: center;
-    margin-left: 5px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    width: 150px;
-    height: 40px;
-}
-.boton:hover{
-    background: white;
-}
-legend{
-    font-weight: bold;
-}
-
-#image{
-    background-image: url(./img/biblia.avif);
-    background-size: cover;
-}
-
 footer {
     background-color: var(--primary);
     color: #040404;
-    font-size: 2.8rem;
+    font-size: 4.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10vh;
     border-radius: 20px;
 }
+.copyright{
+    font-size: 1.5vh;
+}
 
+/*CSS de conocenos.html*/
+
+#bodyc{
+    background-image: url(./img/foto-fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden; /*Con esto solucionas el desbordamiento general, pero oculta cualquier contenido 
+    fuera de la pantalla horizontalmente.De este modo puedes mover los objetos mas alla de su capacidad utilizando "right:-10vw"*/
+}
+
+div{
+    text-align: center;
+}
+
+h3{
+    font-size: 2vh;
+    margin:0.8vh;
+}
+
+#text1{ 
+    width: 110vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+#text{
+    width: 120vh;
+    margin-left: 3vw;
+}
+.text2{
+    position: absolute;
+    top: 15vh;
+    right: -10vw;
+    font-size: 3.5vh;
+    width: 90vh;
+    z-index: -10;
+}
+.titleC{
+    font-size: 3.5vh;
+    margin-bottom: 1vh;
+}
+.cuerpo{
+    font-size: 2vh;
+    margin-top: 0vh;
+    padding: 0;
+}
+.miembros{
+    position: absolute;
+    top: 22vh;
+    right: 0.5vw;
+    width: 25vw;
+    font-size: 2vh;
+    z-index: -10; /*Esto se pone para que aparezca el texto en la capa de atras*/
+}
+.redesSociales{
+    position: absolute;
+    right:1vw;
+    font-size: 5vh;
+    bottom: -2vh;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.redesSociales li{
+    padding: 10px;
+}
+.redesSociales li a{
+    color:white;
+    padding: 0.5vh;
+    transition:0.2s;
+    display: flex;
+}
+.redesSociales li:hover a{
+    color:rgb(197, 182, 182)
+}
+
+/*CSS de formulario.html*/
+#bodyf{
+    background-image: url(./img/wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulo{
+    text-align: center;
+    font-size: 3vh;
+}
+form{
+    text-align: left;
+    margin-top: 2vh;
+    margin-left: 30vw;
+    width: 40vw;
+    height: 85vh;
+    border: 0.6vh outset rgb(128, 136, 88);
+    border-radius: 10px;
+    font-size: 1.8vh;
+}
+label{
+    margin-bottom: 10px;   
+    display: block;
+    padding: 0.1vh;
+}
+input{
+    font-size: 1.2vh;
+}
+select{
+    font-size: 1.2vh;
+}
+textarea{
+    font-size: 1.2vh;
+}
+fieldset{
+    border: 0.2vh solid black;
+}
+.boton{
+    font-size: 2.2vh;
+    border: 0.2vh solid rgb(25, 26, 24);
+    border-radius: 1vh;
+    background-color: lightblue;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 10vw;
+    height: 5vh;
+}
+.boton:hover{
+    background: white;
+}
+legend{
+    font-weight: bold;
+    font-size: 2vh;
+}
 
 /*CSS de localizacion*/
 div iframe{
     border-radius: 20px;
+    width: 50%;
+    height: 50vh;
+}
+.titleL{
+    font-size: 4vh;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+/*CSS de actividades*/
+.conoce1{
+    text-align: center;
+    margin-top: 5vh;
+    margin-left: 10vh;
+    width: 70vw;
+    font-size: 2vh;
+}
+.conoce{
+    text-align: center;
+    margin-left: 10vh;
+    width: 70vw;
+    font-size: 2vh;
+}
+.tituloConoce{
+    font-size: 3.5vh;
+    margin-bottom: 1vh;
 }
 
 
 /***************************************************************************/
-
-@media(max-width:1120px) {
-    nav {
-        justify-content: flex-start;
-    }
+@media(max-width: 1020px) {
     .drawer {
         display: block;
+        font-size: 2rem;
+        color: black;
+        position: absolute;
+        top: 1vh;
+        right: 3vw;
+        z-index: 1000;
     }
-    nav h1 {
-        margin-left: 1rem;
-    }
+
     .lista {
-        position: fixed;
-        width: 50%;
-        height: 100vh;
-        background-color: var(--background);
-        top: 10vh;
-        right: -100%;
-        text-align: right;
-        transition: all 0.5s;
         display: flex;
+        position: absolute;
+        width: 30%;
+        height: 60vh;
+        padding: 0px;
+        background-color: rgb(186, 186, 186);
+        top: 5vh;
+        border-radius: 5px;
+        right: 0;
+        text-align: left;
+        transition: all 0.4s;
         flex-direction: column;
-        align-content: stretch;
     }
-    nav ul li {
-        padding: 1rem 0;
+    .lista li{
+        padding: 3vh 0;
         display: flex;
         flex-direction: column;
-        padding-right: 2rem;
-        border-bottom: solid .1rem rgba(201, 196, 196, 0.4);
+        padding-right: rem;
+        border-bottom: solid 0.1rem black;
+
+    }
+    nav .lista a:hover{
+        text-decoration: underline; /* Subrayado de texto */
+        text-decoration-color: #1b364e; /* Color personalizado para el subrayado */
+        text-decoration-thickness: 2px; /* Grosor del subrayado */
+        border-bottom: none;
     }
     #ckbox:checked~.lista {
-        right: 0;
+        display: none;
     }
-   
-    footer {
-        text-align: center;
-    }
+    
 }
