@@ -23,7 +23,7 @@ header h1{
     display: flex;
     white-space: nowrap; /*Evita que el texto se ponga en varias lineas*/
     color: black;
-    font-size: 4vh;  
+    font-size: clamp(16px, 2vw, 125px);  
 }
 header .logo{
     left: 1rem;
@@ -114,7 +114,7 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
-    height: 58.5vw;
+    height: 50vw;
     margin-top: 3vh;
     margin-right: 0.3vw;
     
@@ -128,6 +128,7 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 0.1vh; /* Espacio entre los bloques de texto */
+    font-size: clamp(16px, (2vw + 8px), 32px);
 }
 main {
     display: flex; /* Usamos flexbox para organizar los elementos lado a lado */
@@ -248,7 +249,7 @@ h3{
     padding: 10px;
 }
 .redesSociales li a{
-    color:black;
+    color:white;
     padding: 0.5vh;
     transition:0.2s;
     display: flex;
@@ -349,7 +350,7 @@ div iframe{
 
 
 /***************************************************************************/
-@media(max-width: 1020px) {
+@media(max-width: 1300px) {
     .drawer {
         display: block;
         font-size: 2rem;
@@ -392,8 +393,17 @@ div iframe{
         display: none;
     }
     .text2{
+        
+       
+        
         margin-left: 3vw;
-        font-size: 3.5vh;  
+        font-size: 3.5vh;
+        
+       
+    }
+    main{
+        display: flex;
+        flex-direction: column;
     }
     
 }
